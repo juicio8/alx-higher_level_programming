@@ -4,4 +4,3 @@ for alpha in range(97, 97 + 26):
         continue
     else:
         print("{}".format(chr(alpha)), end='')
-
