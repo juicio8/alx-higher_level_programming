@@ -8,5 +8,3 @@ def max_integer(my_list=[]):
                 max_item = elem
         return max_item
     return None
-
-print(max_integer([-5, 7, 0, 8]))
