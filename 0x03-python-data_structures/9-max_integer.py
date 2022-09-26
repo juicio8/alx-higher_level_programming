@@ -7,4 +7,3 @@ def max_integer(my_list=[]):
                 max_item = elem
         return max_item
     return None
-
