@@ -6,7 +6,7 @@ def roman_to_int(roman_string):
         string = list(roman_string)
         sum = 0
         for i in string:
-            if string.index(i) < len(string)-1:
+            if string.index(i)+1 < len(string)-1:
                 if roman[i] < roman[(string[string.index(i)+1])]:
                     sum -= roman[i]
                 else:
