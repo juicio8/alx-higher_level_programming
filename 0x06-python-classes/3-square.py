@@ -13,7 +13,7 @@ class Square:
             size (int): size of the square"""
         if type(size) is not int:
             raise TypeError('size must be an integer')
-        else if size < 0:
+        if size < 0:
             raise ValueError('size must be >= 0')
         else:
             self.__size = size
@@ -22,4 +22,4 @@ class Square:
         """Method Area
         Returns:
             area of the square"""
-        return self.__size * self.__size
+        return (self.__size) ** 2
