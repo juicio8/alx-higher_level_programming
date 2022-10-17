@@ -1,3 +1,6 @@
+# 0x07. Python - Test-driven development
+![giphy-4](https://user-images.githubusercontent.com/104834114/196190344-d13f42fa-4be7-4742-b631-7d6cc8ee4c3e.gif)
+
 ## Background Context
 ### Important notice on intranet checks for Python projects
 Starting from today:
