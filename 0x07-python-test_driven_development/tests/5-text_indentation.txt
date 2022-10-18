@@ -1,0 +1,31 @@
+The ``5-text_indententation`` module
+===================================
+
+Using ``text_indentation``
+-----------------------------------
+
+Importing function
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Checking when string is passed
+>>> text_indentation("Hello")
+Hello
+
+Checking when no string is passed
+>>> text_indentation(1)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+Checking when space is front of string
+>>> text_indentation(" Hello")
+Hello
+
+Checking when ?, ., : is passed with a string
+>>> text_indentation("fhfhhfhdhdhhfjf:kjdfjdjjjkdjjkddd  ? jdjdjjdidiiididd.")
+fhfhhfhdhdhhfjf:
+<BLANKLINE>
+kjdfjdjjjkdjjkddd  ?
+<BLANKLINE>
+jdjdjjdidiiididd.
+<BLANKLINE>
