@@ -1,5 +1,5 @@
 # 0x0A. Python - Inheritance
-##cResources
+## Resources
 Read or watch:
 
 - Inheritance
