@@ -76,7 +76,6 @@ class Rectangle:
         symbol = str(self.print_symbol)
         return ((symbol * self.__width + "\n") * self.__height)[:-1]
 
-
     def __repr__(self):
         """Returns a string representation of the rectangle"""
         return f"Rectangle({self.__width}, {self.__height})"
