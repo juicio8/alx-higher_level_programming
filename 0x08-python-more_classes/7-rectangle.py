@@ -9,7 +9,7 @@ class Rectangle:
         width (int): width of a rectangle
         height (int): height of a rectangle
         number_of_instances (int): no of times an instance is created
-        print_symbol (...): symbol to print
+        print_symbol (str): symbol to print
     """
 
     number_of_instances = 0
@@ -73,7 +73,9 @@ class Rectangle:
         """ Returns printable string representation of the rectangle """
         if self.__width == 0 or self.__height == 0:
             return ""
-        return (('#' * self.__width + "\n") * self.__height)[:-1]
+        symbol = str(self.print_symbol)
+        return ((symbol * self.__width + "\n") * self.__height)[:-1]
+
 
     def __repr__(self):
         """Returns a string representation of the rectangle"""
