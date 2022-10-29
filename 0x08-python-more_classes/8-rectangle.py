@@ -105,5 +105,5 @@ class Rectangle:
         area_1 = rect_1.area()
         area_2 = rect_1.area()
         if area_1 >= area_2:
-            return area_1
-        return area_2
+            return rect_1
+        return rect__2
