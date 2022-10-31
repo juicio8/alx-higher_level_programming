@@ -15,21 +15,9 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """ initializer """
 
-        super().__init__(id)
-        if type(width) is not int:
-            raise TypeError("width must be an integer")
-        elif width <= 0:
-            raise ValueError("width must be > 0")
-        else:
-            self.__width = width
-
-        if type(height) is not int:
-            raise TypeError("height must be an integer")
-        elif width <= 0:
-            raise ValueError("height must be > 0")
-        else:
-            self.__height = height
-
+        Base.__init__(self, id)
+        self.__width = width
+        self.__height = height
         self.__x = x
         self.__y = y
 
