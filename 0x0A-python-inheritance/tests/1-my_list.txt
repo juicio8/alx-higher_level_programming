@@ -1,0 +1,39 @@
+The ``1-my_list`` module
+========================
+
+Using ``print_sorted``
+------------------------
+
+Importing MyList
+
+	>>> MyList = __import__('1-my_list').MyList
+
+Checking if it is a subclass of list
+
+	>>> issubclass(MyList, list)
+	True
+
+Creating an instance
+	>>> my_list = MyList()
+
+Checking if it's an instance
+
+	>>> isinstance(my_list, MyList)
+	True
+
+Trying the append method
+	>>> my_list.append(1)
+	>>> my_list.append(4)
+	>>> my_list.append(2)
+	>>> my_list.append(3)
+	>>> my_list.append(5)
+	>>> my_list.append(1)
+
+Printing my_list
+	>>> print(my_list)
+	[1, 4, 2, 3, 5, 1]
+
+Using the print_sorted method
+
+	>>> my_list.print_sorted()
+	[1, 1, 2, 3, 4, 5]
