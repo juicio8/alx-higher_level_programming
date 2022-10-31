@@ -19,3 +19,30 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
+
+    @property
+    def width(self):
+        """ getter for width
+        Returns:
+            width
+        """
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        """ width setter
+        Args:
+            value(int): value of width"""
+        self.__width = value
+
+    @property
+    def height(self):
+        """ height getter """
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        """ height setter
+            Args:
+            value(int): value of height"""
+        self.__height = value
