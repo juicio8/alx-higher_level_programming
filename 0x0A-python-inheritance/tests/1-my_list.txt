@@ -20,6 +20,9 @@ Checking if it's an instance
 
 	>>> isinstance(my_list, MyList)
 	True
+Checking print_sorted method
+	>>> my_list.print_sorted()
+	[]
 
 Trying the append method
 	>>> my_list.append(1)
