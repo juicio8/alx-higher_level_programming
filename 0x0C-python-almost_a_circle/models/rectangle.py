@@ -133,6 +133,7 @@ class Rectangle(Base):
                 self.__height)
 
     def update(self, *args):
+        """assigns an argument to each attribute:"""
         for idx, item in enumerate(args):
             if idx == 0:
                 self.id = item
