@@ -123,4 +123,6 @@ class Rectangle(Base):
             print(self.__width * symbol)
 
     def __str__(self):
-        return (f'[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}')
+        """ overiding str method """"
+       return (f'[Rectangle]({self.id}) {self.__x} / {self.__y} -
+                {self.__width} / {self.__height}') 
