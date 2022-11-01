@@ -119,8 +119,9 @@ class Rectangle(Base):
     def display(self):
         """prints in stdout the Rectangle instance with the character # """
         symbol = '#'
+        print('\n' * self.__y, end="")
         for i in range(self.__height):
-            print(self.__width * symbol)
+            print(" " * self.__x, self.__width * symbol)
 
     def __str__(self):
         """ overiding str method """
