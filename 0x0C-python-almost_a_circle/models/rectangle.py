@@ -144,4 +144,4 @@ class Rectangle(Base):
             if idx == 3:
                 self.__x = item
             if idx == 4:
-                self.__y = item 
+                self.__y = item
