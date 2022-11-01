@@ -124,7 +124,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """ overiding str method """
-        return '[Rectangle]({}) {}/{} - {}/{}'.format(
+        return '[Rectangle] ({}) {}/{} - {}/{}'.format(
                 self.id,
                 self.__x,
                 self.__y,
