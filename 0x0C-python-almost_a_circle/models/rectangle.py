@@ -131,3 +131,16 @@ class Rectangle(Base):
                 self.__y,
                 self.__width,
                 self.__height)
+
+    def update(self, *args):
+        for idx, item in enumerate(args):
+            if idx == 0:
+                self.id = item
+            if idx == 1:
+                self.__width = item
+            if idx == 2:
+                self.__height = item
+            if idx == 3:
+                self.__x = item
+            if idx == 4:
+                self.__y = item 
