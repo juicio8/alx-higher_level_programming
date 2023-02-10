@@ -1,5 +1,10 @@
--- 1. Root user
---  a script that creates the MySQL server user user_0d_1.
-CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
+-- Task 0x01: Grant previlges in MySQL server
 
-GRANT ALL PRIVILEGES *.* TO 'user_0d_1'@'localhost';
+-- Creates a user user_0d_1@localhost
+CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost'
+            IDENTIFIED BY 'user_0d_1_pwd';
+
+-- Grant all previleges to user_0d_1@localhost
+GRANT ALL PRIVILEGES
+                  ON *.*
+                  TO 'user_0d_1'@'localhost';
