@@ -2,7 +2,11 @@
 # Displays all values in the states table of the database hbtn_0e_0_usa
 # whose name matches that supplied as argument.
 # Safe from SQL injections.
-
+"""
+    Displays all values in the states table of the database hbtn_0e_0_usa
+    whose name matches that supplied as argument.
+    Safe from SQL injections.
+"""
 import sys
 import MySQLdb
 
