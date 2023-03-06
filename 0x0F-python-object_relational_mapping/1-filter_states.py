@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/epython3
 # script that lists all states with a name starting with N (upper N) from the database hbtn_0e_0_usa:
 
 import sys
