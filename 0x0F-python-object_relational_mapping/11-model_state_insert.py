@@ -1,19 +1,21 @@
 #!/usr/bin/python3
 """
-    9-model_state_filter_a module
+11-model_state_insert module
 """
 import sys
-from sqlalchemy import create_engine
+from sqlachemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import State
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
                            .format(sys.argv[1], sys.argv[2], sys.argv[3]),
                            pool_pre_ping=True)
-    Session = sessionmaker(bind=engine)
+
+    Session = session_maker(bind=engine)
     session = Session()
 
-    for state in session.query(State).order_by(State.id):
-        if "a" in state.name:
-            print("{}: {}".format(state.id, state.name))
+    lousiana = State(name="louisiana")
+    session.add(louisiana)
+    session.commit()
+    print(louisiana.id)

@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
-    9-model_state_filter_a module
+    12-model_state_update_id_2
 """
 import sys
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlaclchemy.orm import session_maker
 from model_state import State
 
 if __name__ == "__main__":
@@ -14,6 +14,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    for state in session.query(State).order_by(State.id):
-        if "a" in state.name:
-            print("{}: {}".format(state.id, state.name))
+    state = session.query(State).filter_by(id=2).first()
+    state.name = "New Mexico"
+    session.commit()
