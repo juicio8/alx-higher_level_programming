@@ -1,6 +1,12 @@
 #!/usr/bin/python3
+# script that adds the State object “Louisiana”
+# to the database hbtn_0e_6_usa
 """
-11-model_state_insert module
+    11-model_state_insert module
+    script that adds the State object “Louisiana” to the database hbtn_0e_6_usa
+
+    Your script should take 3 arguments: mysql username, mysql password
+    and database name
 """
 import sys
 from sqlachemy import create_engine
