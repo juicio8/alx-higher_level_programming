@@ -1,3 +1,2 @@
-#!/usr/bine/node
-//create a rectangle class
+#!/usr/bin/node
 module.exports = class Rectangle {};
