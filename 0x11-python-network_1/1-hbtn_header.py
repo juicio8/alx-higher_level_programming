@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+"""displays header"""
 import sys
 import urllib.request
-"""displays header"""
+
 
 if __name__ == '__main__':
     url = sys.argv[1]
